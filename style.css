@@ -1,0 +1,143 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+canvas {
+  display: block;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title div:nth-child(1) {
+    animation: dropIn cubic-bezier(0, 0, 0.1, 1) 1 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+.title div:nth-child(2) {
+   animation: dropIn cubic-bezier(0, 0, 0.1, 1) 1 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 35ms;
+}
+.title div:nth-child(3){
+    animation: dropIn cubic-bezier(0, 0, 0.1, 1) 1 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+} 
+.title div:nth-child(4){
+    animation: dropIn cubic-bezier(0, 0, 0.1, 1) 1 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 175ms;
+} 
+.title div:nth-child(5){
+    animation: dropIn cubic-bezier(0, 0, 0.1, 1) 1 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 240ms;
+} 
+
+.icons div:nth-child(1) {
+    animation: dropOut cubic-bezier(0, 0, 0.1, 1) 1 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    font-size: 144px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    user-select: none;   
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* opacity: 0; */
+}
+
+.icons a :hover :nth-child(n){
+    scale: 1.1;
+}
+
+#github{
+    width: 40px;
+    height: 40px;
+    margin-right: 2em;
+    margin-left: 2em;
+    background-size: contain;
+    background-image: url(github.svg);
+    /* color: whitesmoke; */
+    /* fill: whitesmoke; */
+     filter: invert(1);
+     /* opacity: 0.8; */
+
+    animation: dropOut cubic-bezier(0, 0, 0.1, 1) 1 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+#github:hover{
+    filter: invert(0);
+}
+
+
+#github2{
+    width: 40px;
+    height: 40px;
+    margin-right: 2em;
+    margin-left: 2em;
+    background-size: contain;
+    background-image: url(linkedin.svg);
+    fill: whitesmoke;
+    filter: invert(1);
+    /* opacity: 0.8; */
+
+    animation: dropOut cubic-bezier(0, 0, 0.1, 1) 1 1240ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+#github2:hover{
+    filter: invert(0);
+}
+
+
+@keyframes  dropIn{
+    0% {
+        transform: translate3D(0, 1.5em, 0);
+        opacity: 0;
+    }
+    100% {
+        /* #icons{
+            opacity: 0.8;
+        } */
+        transform: translate3D(0, 0, 0);
+    }
+}
+
+@keyframes  dropOut{
+    0% {
+        opacity: 0;
+        /* display: hide; */
+        transform: translate3D(0, -5.5em, 0);
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate3D(0, 0, 0);
+    }
+}
