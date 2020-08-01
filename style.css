@@ -77,7 +77,7 @@ canvas {
     margin-right: 2em;
     margin-left: 2em;
     background-size: contain;
-    background-image: url(github.svg);
+    background-image: url(img/github.svg);
     /* color: whitesmoke; */
     /* fill: whitesmoke; */
      filter: invert(1);
@@ -98,7 +98,7 @@ canvas {
     margin-right: 2em;
     margin-left: 2em;
     background-size: contain;
-    background-image: url(linkedin.svg);
+    background-image: url(img/linkedin.svg);
     fill: whitesmoke;
     filter: invert(1);
     /* opacity: 0.8; */
