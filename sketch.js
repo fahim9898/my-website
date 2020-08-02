@@ -120,8 +120,8 @@ class AngleBox {
             this.floatPoints[points] = applyForce(this.floatPoints[points], angle, random() * 20)
             // strokeWeight(0)
             // point(x_pos , y_pos)
-            stroke("#f5f5f5")
-            strokeWeight(0.08)
+            stroke("rgba(245, 245, 245,0.8)")
+            strokeWeight(0.1)
             line(x_pos, y_pos, this.floatPoints[points].x, this.floatPoints[points].y)
         }
     }
