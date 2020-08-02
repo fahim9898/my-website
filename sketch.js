@@ -1,4 +1,4 @@
-let dont_update_after = 3600;
+let dont_update_after = 3600/2;
 let frame_cnt = 0
 function setup() {
     var tooltip = new Drooltip({ 
@@ -13,7 +13,7 @@ function setup() {
     boxes = new AngleBox(window.innerWidth / 20, window.innerHeight/20, 20)
     boxes.updateAngle()
     // boxes.drawAngle()
-    boxes.intializeFloatPoint(50)
+    boxes.intializeFloatPoint(500)
     console.log(width, height)
 }
 
@@ -120,7 +120,7 @@ class AngleBox {
             this.floatPoints[points] = applyForce(this.floatPoints[points], angle, random() * 20)
             // strokeWeight(0)
             // point(x_pos , y_pos)
-            stroke("rgba(245, 245, 245,0.8)")
+            stroke("rgba(245, 245, 245,0.4)")
             strokeWeight(0.1)
             line(x_pos, y_pos, this.floatPoints[points].x, this.floatPoints[points].y)
         }
