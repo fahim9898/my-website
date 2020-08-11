@@ -1,13 +1,13 @@
 let dont_update_after = 3600/2;
 let frame_cnt = 0
 function setup() {
-    var tooltip = new Drooltip({ 
+    var toolt/* ip = new Drooltip({ 
         "element": ".myTooltip",
         "position": "bottom",
         "background": "#262221",
         "color": "#f5f5f5",
         "animation": "material"
-    });
+    }); */
     createCanvas(window.innerWidth, window.innerHeight);
     background("#3661b0");
     boxes = new AngleBox(window.innerWidth / 20, window.innerHeight/20, 20)
